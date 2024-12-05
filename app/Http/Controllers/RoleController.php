@@ -8,8 +8,8 @@ use App\Models\User;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Redirect;
 use App\Models\Permission;
+use Illuminate\Support\Facades\Schema;
 use App\Models\RolePermission;
-
 
 class RoleController extends Controller
 {
@@ -51,15 +51,21 @@ class RoleController extends Controller
      public function create()
     {
         $permissions = Permission::get();
-        return view('role.create',compact("permissions"));
+        $columns = Schema::getColumnListing('clients');
+        $exclude = ['password', 'remember_token', 'created_at', 'updated_at','deleted_at','id'];
+
+        // Filter out the excluded columns
+        $filteredColumns = array_diff($columns, $exclude);
+        // dd($columns);
+        return view('role.create',['columns' => $filteredColumns , 'permissions' => $permissions]);
     }
 
     public function store(Request $request)
     {
-
+        // dd($request->all());
         $rules = array(
             'title' => 'required|unique:roles,title,Null,id,deleted_at,NULL',
-            'permission'=>'required'
+            // 'permission'=>'required'
         );
         $validator = Validator::make($request->all(), $rules);
         if ($validator->fails()) {
@@ -69,20 +75,21 @@ class RoleController extends Controller
         $model = new Role;
         $model = $model->fill($request->all());
         $model->created_by = auth()->user()->id;
-       
+        $model->is_spouse = $request->is_spouse ? 1 : null;
+        $model->feild_ids = !empty($request->columns) ? json_encode($request->columns) : null;
         if ($model->save()) {
 
-            if(!empty($request->permission)){
+        //     if(!empty($request->permission)){
 
-            foreach ($request->permission as $key => $value) {
-                $rolePermission = new RolePermission;
-                $rolePermission->role_id = $model->id;
-                $rolePermission->permission_id = $value;
-                $rolePermission->created_by = auth()->user()->id;
-                $rolePermission->save();
+        //     foreach ($request->permission as $key => $value) {
+        //         $rolePermission = new RolePermission;
+        //         $rolePermission->role_id = $model->id;
+        //         $rolePermission->permission_id = $value;
+        //         $rolePermission->created_by = auth()->user()->id;
+        //         $rolePermission->save();
 
-            }
-        } 
+        //     }
+        // } 
         
             return redirect('/role')->with('success', "Role created successfully");
         }
@@ -95,16 +102,22 @@ class RoleController extends Controller
       public function edit($id)
     {
         $id = decrypt($id);
-        $permissions = Permission::get();        
+        // $permissions = Permission::get();        
         $model = Role::find($id);
-        $rolePermissions = RolePermission::where(['role_id'=>$id])->pluck('permission_id')->toArray();
-        if(empty($rolePermissions))
-            $rolePermissions = [];
+        $columns = Schema::getColumnListing('clients');
+        $exclude = ['password', 'remember_token', 'created_at', 'updated_at','deleted_at','id'];
 
-        if(!$model){
-            return redirect()->back()->with('error', 'This page does not exist');
-        }
-        return view('role.edit',compact("model","permissions","rolePermissions"));
+        // Filter out the excluded columns
+        $filteredColumns = array_diff($columns, $exclude);
+        $feilds = $model->feild_ids ? json_decode($model->feild_ids) : [1];
+        // $rolePermissions = RolePermission::where(['role_id'=>$id])->pluck('permission_id')->toArray();
+        // if(empty($rolePermissions))
+        //     $rolePermissions = [];
+
+        // if(!$model){
+        //     return redirect()->back()->with('error', 'This page does not exist');
+        // }
+        return view('role.edit',compact("model","feilds","filteredColumns"));
     }
 
 
@@ -112,7 +125,7 @@ class RoleController extends Controller
 
          $rules = array(
             'title' => 'required|unique:roles,title,'.$id.',id,deleted_at,NULL',
-            'permission'=>'required'
+            // 'permission'=>'required'
         );
         $validator = Validator::make($request->all(), $rules);
         if ($validator->fails()) {
@@ -122,21 +135,22 @@ class RoleController extends Controller
         $model = Role::find($id);
 
         $model = $model->fill($request->all());
-
+        $model->is_spouse = $request->is_spouse ? 1 : null;
+        $model->feild_ids = !empty($request->columns) ? json_encode($request->columns) : null;
         if ($model->save()) {
-            if(!empty($request->permission)){
+        //     if(!empty($request->permission)){
 
-                RolePermission::where(['role_id'=>$id])->delete();
+        //         RolePermission::where(['role_id'=>$id])->delete();
 
-            foreach ($request->permission as $key => $value) {
-                $rolePermission = new RolePermission;
-                $rolePermission->role_id = $model->id;
-                $rolePermission->permission_id = $value;
-                $rolePermission->created_by = auth()->user()->id;
-                $rolePermission->save();
+        //     foreach ($request->permission as $key => $value) {
+        //         $rolePermission = new RolePermission;
+        //         $rolePermission->role_id = $model->id;
+        //         $rolePermission->permission_id = $value;
+        //         $rolePermission->created_by = auth()->user()->id;
+        //         $rolePermission->save();
 
-            }
-        } 
+        //     }
+        // } 
                 return redirect('/role')->with('success', "Role updated successfully");
             } else {
                 return Redirect::back()->withInput()->with('error', 'Some error occured. Please try again later');
