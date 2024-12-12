@@ -47,7 +47,7 @@
 
             <li class=" nav-item {{request()->is('role') || request()->is('role/*')?'active':''}}"><a class="d-flex align-items-center" href="{{route('role.index')}}"><i data-feather="grid"></i><span class="menu-title text-truncate" data-i18n="Kanban">Roles</span></a>
                 </li>
-                <li class=" nav-item {{request()->is('role') || request()->is('role/*')?'active':''}}"><a class="d-flex align-items-center" href="{{route('role.index')}}"><i data-feather="grid"></i><span class="menu-title text-truncate" data-i18n="Kanban">Roles</span></a>
+                <li class=" nav-item {{request()->is('form') || request()->is('form/*')?'active':''}}"><a class="d-flex align-items-center" href="{{route('user.render.form')}}"><i data-feather="grid"></i><span class="menu-title text-truncate" data-i18n="Kanban">Client</span></a>
                 </li>
             <!-- <li class=" nav-item"><a class="d-flex align-items-center" href="app-file-manager.html"><i data-feather="save"></i><span class="menu-title text-truncate" data-i18n="File Manager">File Manager</span></a>
             </li>
