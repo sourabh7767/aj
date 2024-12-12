@@ -33,23 +33,23 @@
             <h3>Client Information</h3>
             <div class="col-md-6">
                 <label for="inputEmail4" class="form-label">First Name</label>
-                <input type="text" name="first_name" class="form-control" id="inputEmail4">
+                <input type="text" name="first_name" class="form-control" id="inputEmail4" placeholder="Enter first name">
             </div>
             <div class="col-md-6">
                 <label for="inputPassword4" class="form-label">Last Name</label>
-                <input type="text"  name="last_name" class="form-control" id="inputPassword4">
+                <input type="text"  name="last_name" class="form-control" placeholder="Enter last name" id="inputPassword4">
             </div>
             <div class="col-12">
                 <label for="inputAddress" class="form-label">Best way to contact?</label>
-                <input type="text" name="best_way_to_contact" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                <input type="text" name="best_way_to_contact" class="form-control" id="inputAddress" placeholder="Email or Phone">
             </div>
             <div class="col-12">
                 <label for="inputAddress2" class="form-label">Email</label>
-                <input type="email" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                <input type="email" class="form-control" id="inputAddress2" placeholder="Enter email">
             </div>
             <div class="col-md-4">
                 <label for="inputCity" class="form-label">Phone Number</label>
-                <input type="number" class="form-control" id="inputCity">
+                <input type="number" class="form-control" id="inputCity" placeholder="Enter Phone number">
             </div>
             <div class="col-md-4">
                 <label for="inputState" class="form-label">Rent/Own</label>
@@ -74,23 +74,23 @@
             <h3>Previous 2nd Address (optional Fields)</h3>
             <div class="col-md-6">
                 <label for="inputZip" class="form-label">Street Name</label>
-                <input type="text" class="form-control" id="">
-            </div>
+                <input type="text" class="form-control" id="" placeholder="Enter City Name">
+            </div> 
             <div class="col-md-6">
                 <label for="inputZip" class="form-label">AP+</label>
                 <input type="text" class="form-control" id="">
             </div>
             <div class="col-md-6">
                 <label for="inputZip" class="form-label">City</label>
-                <input type="text" class="form-control" id="">
+                <input type="text" class="form-control" id="" placeholder="Enter City name">
             </div>
             <div class="col-md-6">
                 <label for="inputZip" class="form-label">State</label>
-                <input type="text" class="form-control" id="">
+                <input type="text" class="form-control" id="" placeholder="Enter State Name">
             </div>
             <div class="col-md-6">
                 <label for="inputZip" class="form-label">Zip</label>
-                <input type="text" class="form-control" id="">
+                <input type="number" class="form-control" id="" placeholder="Enter Zip code">
             </div>
             <div class="col-md-6">
                 <label for="inputZip" class="form-label">How Long Have you lived there?</label>
@@ -107,19 +107,19 @@
             <h3>Current Employer</h3>
             <div class="col-md-6">
                 <label for="inputEmail4" class="form-label">Applicant Employer</label>
-                <input type="text" name="first_name" class="form-control" id="inputEmail4">
+                <input type="text" name="first_name" class="form-control" placeholder="Enter Applicant Employer" id="inputEmail4">
             </div>
             <div class="col-md-6">
                 <label for="inputPassword4" class="form-label">Position</label>
-                <input type="text"  name="last_name" class="form-control" id="inputPassword4">
+                <input type="text"  name="last_name" class="form-control" placeholder="Enter position" id="inputPassword4">
             </div>
             <div class="col-md-6">
                 <label for="inputPassword4" class="form-label">Start Date</label>
-                <input type="text"  name="last_name" class="form-control" id="inputPassword4">
+                <input type="date"  name="last_name" class="form-control" id="inputPassword4">
             </div>
             <div class="col-md-6">
                 <label for="inputPassword4" class="form-label">End Date</label>
-                <input type="text"  name="last_name" class="form-control" id="inputPassword4">
+                <input type="date"  name="last_name" class="form-control" id="inputPassword4">
             </div>
             <div class="col-md-6">
                 <label for="inputPassword4" class="form-label">W2/Self-Employed</label>
@@ -141,23 +141,23 @@
                 <label for="inputPassword4" class="form-label">Income 2022</label>
                 <input type="text"  name="last_name" class="form-control" id="inputPassword4">
             </div>
-            <h3>Previous Employer</h3>
+            <h3>Previous 1Employer</h3>
 
             <div class="col-md-4">
                 <label for="inputPassword4" class="form-label">Previous Employer</label>
-                <input type="text"  name="last_name" class="form-control" id="inputPassword4">
+                <input type="text"  name="last_name" class="form-control" id="inputPassword4" placeholder="Enter Previous Employer">
             </div>
             <div class="col-md-4">
                 <label for="inputPassword4" class="form-label">Position</label>
-                <input type="text"  name="last_name" class="form-control" id="inputPassword4">
+                <input type="text"  name="last_name" class="form-control" placeholder="Enter position" id="inputPassword4">
             </div>
             <div class="col-md-4">
                 <label for="inputPassword4" class="form-label">Start Date</label>
-                <input type="text"  name="last_name" class="form-control" id="inputPassword4">
+                <input type="date"  name="last_name" class="form-control" id="inputPassword4">
             </div>
             <div class="col-md-4">
                 <label for="inputPassword4" class="form-label">End Date</label>
-                <input type="text"  name="last_name" class="form-control" id="inputPassword4">
+                <input type="date"  name="last_name" class="form-control" id="inputPassword4">
             </div>
             <div class="col-md-4">
                 <label for="inputPassword4" class="form-label">W2/Self-Employed</label>
@@ -184,11 +184,11 @@
 
             <div class="col-md-4">
                 <label for="inputPassword4" class="form-label">Bank 1 Name</label>
-                <input type="text"  name="last_name" class="form-control" id="inputPassword4">
+                <input type="text"  name="last_name" class="form-control" placeholder="Enter Bank 1 Name" id="inputPassword4">
             </div>
             <div class="col-md-4">
                 <label for="inputPassword4" class="form-label">Bank 2 Name</label>
-                <input type="text"  name="last_name" class="form-control" id="inputPassword4">
+                <input type="text"  name="last_name" class="form-control" placeholder="Enter Bank 2 Name" id="inputPassword4">
             </div>
             <div class="col-md-4">
                 <label for="inputPassword4" class="form-label">Assets</label>
@@ -245,23 +245,23 @@
             <h3 class="d-none spouse">Client 1 spouse</h3>
             <div class="col-md-6 spouse d-none">
                 <label for="inputEmail4" class="form-label">First Name</label>
-                <input type="text" name="first_name" class="form-control" id="inputEmail4">
+                <input type="text" name="first_name" class="form-control" id="inputEmail4" placeholder="Enter first name">
             </div>
             <div class="col-md-6 spouse d-none">
                 <label for="inputPassword4" class="form-label">Last Name</label>
-                <input type="text"  name="last_name" class="form-control" id="inputPassword4">
+                <input type="text"  name="last_name" class="form-control" placeholder="Enter last name" id="inputPassword4">
             </div>
             <div class="col-12 spouse d-none">
                 <label for="inputAddress" class="form-label">Best way to contact?</label>
-                <input type="text" name="best_way_to_contact" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                <input type="text" name="best_way_to_contact" class="form-control" id="inputAddress" placeholder="Email or Phone">
             </div>
             <div class="col-12 spouse d-none">
                 <label for="inputAddress2" class="form-label">Email</label>
-                <input type="email" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                <input type="email" class="form-control" id="inputAddress2" placeholder="Enter email">
             </div>
             <div class="col-md-4 spouse d-none">
                 <label for="inputCity" class="form-label">Phone Number</label>
-                <input type="number" class="form-control" id="inputCity">
+                <input type="number" class="form-control" id="inputCity" placeholder="Enter Phone number">
             </div>
             <div class="col-md-4 spouse d-none">
                 <label for="inputState" class="form-label">Rent/Own</label>
@@ -286,23 +286,23 @@
             <h3 class="spouse d-none">Previous 2nd Address (optional Fields)</h3>
             <div class="col-md-6 spouse d-none">
                 <label for="inputZip" class="form-label">Street Name</label>
-                <input type="text" class="form-control" id="">
-            </div>
+                <input type="text" class="form-control" id="" placeholder="Enter City Name">
+            </div> 
             <div class="col-md-6 spouse d-none">
                 <label for="inputZip" class="form-label">AP+</label>
                 <input type="text" class="form-control" id="">
             </div>
             <div class="col-md-6 spouse d-none">
                 <label for="inputZip" class="form-label">City</label>
-                <input type="text" class="form-control" id="">
+                <input type="text" class="form-control" id="" placeholder="Enter City name">
             </div>
             <div class="col-md-6 spouse d-none">
                 <label for="inputZip" class="form-label">State</label>
-                <input type="text" class="form-control" id="">
+                <input type="text" class="form-control" id="" placeholder="Enter State Name">
             </div>
             <div class="col-md-6 spouse d-none">
                 <label for="inputZip" class="form-label">Zip</label>
-                <input type="text" class="form-control" id="">
+                <input type="number" class="form-control" id="" placeholder="Enter Zip code">
             </div>
             <div class="col-md-6 spouse d-none">
                 <label for="inputZip" class="form-label">How Long Have you lived there?</label>
@@ -319,19 +319,19 @@
             <h3 class="spouse d-none">Current Employer</h3>
             <div class="col-md-6 spouse d-none">
                 <label for="inputEmail4" class="form-label">Applicant Employer</label>
-                <input type="text" name="first_name" class="form-control" id="inputEmail4">
+                <input type="text" name="first_name" class="form-control" placeholder="Enter Applicant Employer" id="inputEmail4">
             </div>
             <div class="col-md-6 spouse d-none">
                 <label for="inputPassword4" class="form-label">Position</label>
-                <input type="text"  name="last_name" class="form-control" id="inputPassword4">
+                <input type="text"  name="last_name" class="form-control" placeholder="Enter position" id="inputPassword4">
             </div>
             <div class="col-md-6 spouse d-none">
                 <label for="inputPassword4" class="form-label">Start Date</label>
-                <input type="text"  name="last_name" class="form-control" id="inputPassword4">
+                <input type="date"  name="last_name" class="form-control" id="inputPassword4">
             </div>
             <div class="col-md-6 spouse d-none">
                 <label for="inputPassword4" class="form-label">End Date</label>
-                <input type="text"  name="last_name" class="form-control" id="inputPassword4">
+                <input type="date"  name="last_name" class="form-control" id="inputPassword4">
             </div>
             <div class="col-md-6 spouse d-none">
                 <label for="inputPassword4" class="form-label">W2/Self-Employed</label>
@@ -357,19 +357,19 @@
 
             <div class="col-md-4 spouse d-none">
                 <label for="inputPassword4" class="form-label">Previous Employer</label>
-                <input type="text"  name="last_name" class="form-control" id="inputPassword4">
+                <input type="text"  name="last_name" class="form-control" id="inputPassword4" placeholder="Enter Previous Employer">
             </div>
             <div class="col-md-4 spouse d-none">
                 <label for="inputPassword4" class="form-label">Position</label>
-                <input type="text"  name="last_name" class="form-control" id="inputPassword4">
+                <input type="text"  name="last_name" class="form-control" placeholder="Enter position" id="inputPassword4">
             </div>
             <div class="col-md-4 spouse d-none">
                 <label for="inputPassword4" class="form-label">Start Date</label>
-                <input type="text"  name="last_name" class="form-control" id="inputPassword4">
+                <input type="date"  name="last_name" class="form-control" id="inputPassword4">
             </div>
             <div class="col-md-4 spouse d-none">
                 <label for="inputPassword4" class="form-label">End Date</label>
-                <input type="text"  name="last_name" class="form-control" id="inputPassword4">
+                <input type="date"  name="last_name" class="form-control" id="inputPassword4">
             </div>
             <div class="col-md-4 spouse d-none">
                 <label for="inputPassword4" class="form-label">W2/Self-Employed</label>
@@ -396,11 +396,11 @@
 
             <div class="col-md-4 spouse d-none">
                 <label for="inputPassword4" class="form-label">Bank 1 Name</label>
-                <input type="text"  name="last_name" class="form-control" id="inputPassword4">
+                <input type="text"  name="last_name" class="form-control" placeholder="Enter Bank 1 Name" id="inputPassword4">
             </div>
             <div class="col-md-4 spouse d-none">
                 <label for="inputPassword4" class="form-label">Bank 2 Name</label>
-                <input type="text"  name="last_name" class="form-control" id="inputPassword4">
+                <input type="text"  name="last_name" class="form-control" placeholder="Enter Bank 2 Name" id="inputPassword4">
             </div>
             <div class="col-md-4 spouse d-none">
                 <label for="inputPassword4" class="form-label">Assets</label>
@@ -457,23 +457,23 @@
             <h3 class="d-none client_two">Client 2 Information</h3>
             <div class="col-md-6 client_two d-none">
                 <label for="inputEmail4" class="form-label">First Name</label>
-                <input type="text" name="first_name" class="form-control" id="inputEmail4">
+                <input type="text" name="first_name" class="form-control" id="inputEmail4" placeholder="Enter first name">
             </div>
             <div class="col-md-6 client_two d-none">
                 <label for="inputPassword4" class="form-label">Last Name</label>
-                <input type="text"  name="last_name" class="form-control" id="inputPassword4">
+                <input type="text"  name="last_name" class="form-control" placeholder="Enter last name" id="inputPassword4">
             </div>
             <div class="col-12 client_two d-none">
                 <label for="inputAddress" class="form-label">Best way to contact?</label>
-                <input type="text" name="best_way_to_contact" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                <input type="text" name="best_way_to_contact" class="form-control" id="inputAddress" placeholder="Email or Phone">
             </div>
             <div class="col-12 client_two d-none">
                 <label for="inputAddress2" class="form-label">Email</label>
-                <input type="email" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                <input type="email" class="form-control" id="inputAddress2" placeholder="Enter email">
             </div>
             <div class="col-md-4 client_two d-none">
                 <label for="inputCity" class="form-label">Phone Number</label>
-                <input type="number" class="form-control" id="inputCity">
+                <input type="number" class="form-control" id="inputCity" placeholder="Enter Phone number">
             </div>
             <div class="col-md-4 client_two d-none">
                 <label for="inputState" class="form-label">Rent/Own</label>
@@ -498,23 +498,23 @@
             <h3 class="client_two d-none">Previous 2nd Address (optional Fields)</h3>
             <div class="col-md-6 client_two d-none">
                 <label for="inputZip" class="form-label">Street Name</label>
-                <input type="text" class="form-control" id="">
-            </div>
+                <input type="text" class="form-control" id="" placeholder="Enter City Name">
+            </div> 
             <div class="col-md-6 client_two d-none">
                 <label for="inputZip" class="form-label">AP+</label>
                 <input type="text" class="form-control" id="">
             </div>
             <div class="col-md-6 client_two d-none">
                 <label for="inputZip" class="form-label">City</label>
-                <input type="text" class="form-control" id="">
+                <input type="text" class="form-control" id="" placeholder="Enter City name">
             </div>
             <div class="col-md-6 client_two d-none">
                 <label for="inputZip" class="form-label">State</label>
-                <input type="text" class="form-control" id="">
+                <input type="text" class="form-control" id="" placeholder="Enter State Name">
             </div>
             <div class="col-md-6 client_two d-none">
                 <label for="inputZip" class="form-label">Zip</label>
-                <input type="text" class="form-control" id="">
+                <input type="number" class="form-control" id="" placeholder="Enter Zip code">
             </div>
             <div class="col-md-6 client_two d-none">
                 <label for="inputZip" class="form-label">How Long Have you lived there?</label>
@@ -531,19 +531,19 @@
             <h3 class="client_two d-none">Current Employer</h3>
             <div class="col-md-6 client_two d-none">
                 <label for="inputEmail4" class="form-label">Applicant Employer</label>
-                <input type="text" name="first_name" class="form-control" id="inputEmail4">
+                <input type="text" name="first_name" class="form-control" placeholder="Enter Applicant Employer" id="inputEmail4">
             </div>
             <div class="col-md-6 client_two d-none">
                 <label for="inputPassword4" class="form-label">Position</label>
-                <input type="text"  name="last_name" class="form-control" id="inputPassword4">
+                <input type="text"  name="last_name" class="form-control" placeholder="Enter position" id="inputPassword4">
             </div>
             <div class="col-md-6 client_two d-none">
                 <label for="inputPassword4" class="form-label">Start Date</label>
-                <input type="text"  name="last_name" class="form-control" id="inputPassword4">
+                <input type="date"  name="last_name" class="form-control" id="inputPassword4">
             </div>
             <div class="col-md-6 client_two d-none">
                 <label for="inputPassword4" class="form-label">End Date</label>
-                <input type="text"  name="last_name" class="form-control" id="inputPassword4">
+                <input type="date"  name="last_name" class="form-control" id="inputPassword4">
             </div>
             <div class="col-md-6 client_two d-none">
                 <label for="inputPassword4" class="form-label">W2/Self-Employed</label>
@@ -569,19 +569,19 @@
 
             <div class="col-md-4 client_two d-none">
                 <label for="inputPassword4" class="form-label">Previous Employer</label>
-                <input type="text"  name="last_name" class="form-control" id="inputPassword4">
+                <input type="text"  name="last_name" class="form-control" id="inputPassword4" placeholder="Enter Previous Employer">
             </div>
             <div class="col-md-4 client_two d-none">
                 <label for="inputPassword4" class="form-label">Position</label>
-                <input type="text"  name="last_name" class="form-control" id="inputPassword4">
+                <input type="text"  name="last_name" class="form-control" placeholder="Enter position" id="inputPassword4">
             </div>
             <div class="col-md-4 client_two d-none">
                 <label for="inputPassword4" class="form-label">Start Date</label>
-                <input type="text"  name="last_name" class="form-control" id="inputPassword4">
+                <input type="date"  name="last_name" class="form-control" id="inputPassword4">
             </div>
             <div class="col-md-4 client_two d-none">
                 <label for="inputPassword4" class="form-label">End Date</label>
-                <input type="text"  name="last_name" class="form-control" id="inputPassword4">
+                <input type="date"  name="last_name" class="form-control" id="inputPassword4">
             </div>
             <div class="col-md-4 client_two d-none">
                 <label for="inputPassword4" class="form-label">W2/Self-Employed</label>
@@ -608,11 +608,11 @@
 
             <div class="col-md-4 client_two d-none">
                 <label for="inputPassword4" class="form-label">Bank 1 Name</label>
-                <input type="text"  name="last_name" class="form-control" id="inputPassword4">
+                <input type="text"  name="last_name" class="form-control" placeholder="Enter Bank 1 Name" id="inputPassword4">
             </div>
             <div class="col-md-4 client_two d-none">
                 <label for="inputPassword4" class="form-label">Bank 2 Name</label>
-                <input type="text"  name="last_name" class="form-control" id="inputPassword4">
+                <input type="text"  name="last_name" class="form-control" placeholder="Enter Bank 2 Name" id="inputPassword4">
             </div>
             <div class="col-md-4 client_two d-none">
                 <label for="inputPassword4" class="form-label">Assets</label>
@@ -669,23 +669,23 @@
             <h3 class="d-none client_three">Client 3 Information</h3>
             <div class="col-md-6 client_three d-none">
                 <label for="inputEmail4" class="form-label">First Name</label>
-                <input type="text" name="first_name" class="form-control" id="inputEmail4">
+                <input type="text" name="first_name" class="form-control" id="inputEmail4" placeholder="Enter first name" >
             </div>
             <div class="col-md-6 client_three d-none">
                 <label for="inputPassword4" class="form-label">Last Name</label>
-                <input type="text"  name="last_name" class="form-control" id="inputPassword4">
+                <input type="text"  name="last_name" class="form-control" placeholder="Enter last name" id="inputPassword4">
             </div>
             <div class="col-12 client_three d-none">
                 <label for="inputAddress" class="form-label">Best way to contact?</label>
-                <input type="text" name="best_way_to_contact" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                <input type="text" name="best_way_to_contact" class="form-control" id="inputAddress" placeholder="Email or Phone">
             </div>
             <div class="col-12 client_three d-none">
                 <label for="inputAddress2" class="form-label">Email</label>
-                <input type="email" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                <input type="email" class="form-control" id="inputAddress2" placeholder="Enter email">
             </div>
             <div class="col-md-4 client_three d-none">
                 <label for="inputCity" class="form-label">Phone Number</label>
-                <input type="number" class="form-control" id="inputCity">
+                <input type="number" class="form-control" id="inputCity" placeholder="Enter Phone number">
             </div>
             <div class="col-md-4 client_three d-none">
                 <label for="inputState" class="form-label">Rent/Own</label>
@@ -710,23 +710,23 @@
             <h3 class="client_three d-none">Previous 2nd Address (optional Fields)</h3>
             <div class="col-md-6 client_three d-none">
                 <label for="inputZip" class="form-label">Street Name</label>
-                <input type="text" class="form-control" id="">
-            </div>
+                <input type="text" class="form-control" id="" placeholder="Enter Street Name">
+            </div> 
             <div class="col-md-6 client_three d-none">
                 <label for="inputZip" class="form-label">AP+</label>
                 <input type="text" class="form-control" id="">
             </div>
             <div class="col-md-6 client_three d-none">
                 <label for="inputZip" class="form-label">City</label>
-                <input type="text" class="form-control" id="">
+                <input type="text" class="form-control" id="" placeholder="Enter City name">
             </div>
             <div class="col-md-6 client_three d-none">
                 <label for="inputZip" class="form-label">State</label>
-                <input type="text" class="form-control" id="">
+                <input type="text" class="form-control" id="" placeholder="Enter State Name">
             </div>
             <div class="col-md-6 client_three d-none">
                 <label for="inputZip" class="form-label">Zip</label>
-                <input type="text" class="form-control" id="">
+                <input type="number" class="form-control" id="" placeholder="Enter Zip code">
             </div>
             <div class="col-md-6 client_three d-none">
                 <label for="inputZip" class="form-label">How Long Have you lived there?</label>
@@ -743,19 +743,19 @@
             <h3 class="client_three d-none">Current Employer</h3>
             <div class="col-md-6 client_three d-none">
                 <label for="inputEmail4" class="form-label">Applicant Employer</label>
-                <input type="text" name="first_name" class="form-control" id="inputEmail4">
+                <input type="text" name="first_name" class="form-control" placeholder="Enter Applicant Employer" id="inputEmail4">
             </div>
             <div class="col-md-6 client_three d-none">
                 <label for="inputPassword4" class="form-label">Position</label>
-                <input type="text"  name="last_name" class="form-control" id="inputPassword4">
+                <input type="text"  name="last_name" class="form-control" placeholder="Enter position" id="inputPassword4">
             </div>
             <div class="col-md-6 client_three d-none">
                 <label for="inputPassword4" class="form-label">Start Date</label>
-                <input type="text"  name="last_name" class="form-control" id="inputPassword4">
+                <input type="date"  name="last_name" class="form-control" id="inputPassword4">
             </div>
             <div class="col-md-6 client_three d-none">
                 <label for="inputPassword4" class="form-label">End Date</label>
-                <input type="text"  name="last_name" class="form-control" id="inputPassword4">
+                <input type="date"  name="last_name" class="form-control" id="inputPassword4">
             </div>
             <div class="col-md-6 client_three d-none">
                 <label for="inputPassword4" class="form-label">W2/Self-Employed</label>
@@ -781,19 +781,19 @@
 
             <div class="col-md-4 client_three d-none">
                 <label for="inputPassword4" class="form-label">Previous Employer</label>
-                <input type="text"  name="last_name" class="form-control" id="inputPassword4">
+                <input type="text"  name="last_name" class="form-control" id="inputPassword4" placeholder="Enter Previous Employer">
             </div>
             <div class="col-md-4 client_three d-none">
                 <label for="inputPassword4" class="form-label">Position</label>
-                <input type="text"  name="last_name" class="form-control" id="inputPassword4">
+                <input type="text"  name="last_name" class="form-control" placeholder="Enter position" id="inputPassword4">
             </div>
             <div class="col-md-4 client_three d-none">
                 <label for="inputPassword4" class="form-label">Start Date</label>
-                <input type="text"  name="last_name" class="form-control" id="inputPassword4">
+                <input type="date"  name="last_name" class="form-control" id="inputPassword4">
             </div>
             <div class="col-md-4 client_three d-none">
                 <label for="inputPassword4" class="form-label">End Date</label>
-                <input type="text"  name="last_name" class="form-control" id="inputPassword4">
+                <input type="date"  name="last_name" class="form-control" id="inputPassword4">
             </div>
             <div class="col-md-4 client_three d-none">
                 <label for="inputPassword4" class="form-label">W2/Self-Employed</label>
@@ -820,11 +820,11 @@
 
             <div class="col-md-4 client_three d-none">
                 <label for="inputPassword4" class="form-label">Bank 1 Name</label>
-                <input type="text"  name="last_name" class="form-control" id="inputPassword4">
+                <input type="text"  name="last_name" class="form-control" placeholder="Enter Bank 1 Name" id="inputPassword4">
             </div>
             <div class="col-md-4 client_three d-none">
                 <label for="inputPassword4" class="form-label">Bank 2 Name</label>
-                <input type="text"  name="last_name" class="form-control" id="inputPassword4">
+                <input type="text"  name="last_name" class="form-control" placeholder="Enter Bank 2 Name" id="inputPassword4">
             </div>
             <div class="col-md-4 client_three d-none">
                 <label for="inputPassword4" class="form-label">Assets</label>
@@ -883,23 +883,23 @@
             <h3 class="d-none client_three_spouse">Client 3 Spouse</h3>
             <div class="col-md-6 client_three_spouse d-none">
                 <label for="inputEmail4" class="form-label">First Name</label>
-                <input type="text" name="first_name" class="form-control" id="inputEmail4">
+                <input type="text" name="first_name" class="form-control" id="inputEmail4" placeholder="Enter first name">
             </div>
             <div class="col-md-6 client_three_spouse d-none">
                 <label for="inputPassword4" class="form-label">Last Name</label>
-                <input type="text"  name="last_name" class="form-control" id="inputPassword4">
+                <input type="text"  name="last_name" class="form-control" placeholder="Enter last name" id="inputPassword4">
             </div>
             <div class="col-12 client_three_spouse d-none">
                 <label for="inputAddress" class="form-label">Best way to contact?</label>
-                <input type="text" name="best_way_to_contact" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                <input type="text" name="best_way_to_contact" class="form-control" id="inputAddress" placeholder="Email or Phone">
             </div>
             <div class="col-12 client_three_spouse d-none">
                 <label for="inputAddress2" class="form-label">Email</label>
-                <input type="email" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                <input type="email" class="form-control" id="inputAddress2" placeholder="Enter email">
             </div>
             <div class="col-md-4 client_three_spouse d-none">
                 <label for="inputCity" class="form-label">Phone Number</label>
-                <input type="number" class="form-control" id="inputCity">
+                <input type="number" class="form-control" id="inputCity" placeholder="Enter Phone number">
             </div>
             <div class="col-md-4 client_three_spouse d-none">
                 <label for="inputState" class="form-label">Rent/Own</label>
@@ -924,23 +924,23 @@
             <h3 class="client_three_spouse d-none">Previous 2nd Address (optional Fields)</h3>
             <div class="col-md-6 client_three_spouse d-none">
                 <label for="inputZip" class="form-label">Street Name</label>
-                <input type="text" class="form-control" id="">
-            </div>
+                <input type="text" class="form-control" id="" placeholder="Enter City Name">
+            </div> 
             <div class="col-md-6 client_three_spouse d-none">
                 <label for="inputZip" class="form-label">AP+</label>
                 <input type="text" class="form-control" id="">
             </div>
             <div class="col-md-6 client_three_spouse d-none">
                 <label for="inputZip" class="form-label">City</label>
-                <input type="text" class="form-control" id="">
+                <input type="text" class="form-control" id="" placeholder="Enter City name">
             </div>
             <div class="col-md-6 client_three_spouse d-none">
                 <label for="inputZip" class="form-label">State</label>
-                <input type="text" class="form-control" id="">
+                <input type="text" class="form-control" id="" placeholder="Enter State Name">
             </div>
             <div class="col-md-6 client_three_spouse d-none">
                 <label for="inputZip" class="form-label">Zip</label>
-                <input type="text" class="form-control" id="">
+                <input type="number" class="form-control" id="" placeholder="Enter Zip code">
             </div>
             <div class="col-md-6 client_three_spouse d-none">
                 <label for="inputZip" class="form-label">How Long Have you lived there?</label>
@@ -957,19 +957,19 @@
             <h3 class="client_three_spouse d-none">Current Employer</h3>
             <div class="col-md-6 client_three_spouse d-none">
                 <label for="inputEmail4" class="form-label">Applicant Employer</label>
-                <input type="text" name="first_name" class="form-control" id="inputEmail4">
+                <input type="text" name="first_name" class="form-control" placeholder="Enter Applicant Employer" id="inputEmail4">
             </div>
             <div class="col-md-6 client_three_spouse d-none">
                 <label for="inputPassword4" class="form-label">Position</label>
-                <input type="text"  name="last_name" class="form-control" id="inputPassword4">
+                <input type="text"  name="last_name" class="form-control" placeholder="Enter position" id="inputPassword4">
             </div>
             <div class="col-md-6 client_three_spouse d-none">
                 <label for="inputPassword4" class="form-label">Start Date</label>
-                <input type="text"  name="last_name" class="form-control" id="inputPassword4">
+                <input type="date"  name="last_name" class="form-control" id="inputPassword4">
             </div>
             <div class="col-md-6 client_three_spouse d-none">
                 <label for="inputPassword4" class="form-label">End Date</label>
-                <input type="text"  name="last_name" class="form-control" id="inputPassword4">
+                <input type="date"  name="last_name" class="form-control" id="inputPassword4">
             </div>
             <div class="col-md-6 client_three_spouse d-none">
                 <label for="inputPassword4" class="form-label">W2/Self-Employed</label>
@@ -993,21 +993,21 @@
             </div>
             <h3 class="client_three_spouse d-none">Previous Employer</h3>
 
-            <div class="col-md-4 client_three_spouse d-none">
+             <div class="col-md-4 client_three_spouse d-none">
                 <label for="inputPassword4" class="form-label">Previous Employer</label>
-                <input type="text"  name="last_name" class="form-control" id="inputPassword4">
+                <input type="text"  name="last_name" class="form-control" id="inputPassword4" placeholder="Enter Previous Employer">
             </div>
             <div class="col-md-4 client_three_spouse d-none">
                 <label for="inputPassword4" class="form-label">Position</label>
-                <input type="text"  name="last_name" class="form-control" id="inputPassword4">
+                <input type="text"  name="last_name" class="form-control" placeholder="Enter position" id="inputPassword4">
             </div>
             <div class="col-md-4 client_three_spouse d-none">
                 <label for="inputPassword4" class="form-label">Start Date</label>
-                <input type="text"  name="last_name" class="form-control" id="inputPassword4">
+                <input type="date"  name="last_name" class="form-control" id="inputPassword4">
             </div>
             <div class="col-md-4 client_three_spouse d-none">
                 <label for="inputPassword4" class="form-label">End Date</label>
-                <input type="text"  name="last_name" class="form-control" id="inputPassword4">
+                <input type="date"  name="last_name" class="form-control" id="inputPassword4">
             </div>
             <div class="col-md-4 client_three_spouse d-none">
                 <label for="inputPassword4" class="form-label">W2/Self-Employed</label>
@@ -1034,11 +1034,11 @@
 
             <div class="col-md-4 client_three_spouse d-none">
                 <label for="inputPassword4" class="form-label">Bank 1 Name</label>
-                <input type="text"  name="last_name" class="form-control" id="inputPassword4">
+                <input type="text"  name="last_name" class="form-control" placeholder="Enter Bank 1 Name" id="inputPassword4">
             </div>
             <div class="col-md-4 client_three_spouse d-none">
                 <label for="inputPassword4" class="form-label">Bank 2 Name</label>
-                <input type="text"  name="last_name" class="form-control" id="inputPassword4">
+                <input type="text"  name="last_name" class="form-control" placeholder="Enter Bank 2 Name" id="inputPassword4">
             </div>
             <div class="col-md-4 client_three_spouse d-none">
                 <label for="inputPassword4" class="form-label">Assets</label>
