@@ -28,7 +28,363 @@
                 </div>
             </div>
         </div>
+        <div class="mb-2">
+            <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#realEstateModal">
+                Real Estate & Loan Fields
+            </button>
+            {{-- =========real estate modal ========== --}}
+            <div class="modal fade" id="realEstateModal" tabindex="-1" aria-labelledby="realEstateModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="realEstateModalLabel">Real Estate & Loan Form</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <!-- Lender -->
+                                <div class="mb-3">
+                                    <label for="lender" class="form-label">Lender</label>
+                                    <select class="form-select" id="lender">
+                                        <option selected>Select Lender</option>
+                                        <option value="Lender1">Lender 1</option>
+                                        <option value="Lender2">Lender 2</option>
+                                    </select>
+                                </div>
+        
+                                <!-- Processor -->
+                                <div class="mb-3">
+                                    <label for="processor" class="form-label">Processor</label>
+                                    <input type="text" class="form-control" id="processor" placeholder="Type Processor">
+                                </div>
+        
+                                <!-- Loan Type -->
+                                <div class="mb-3">
+                                    <label for="loanType" class="form-label">Loan Type</label>
+                                    <select class="form-select" id="loanType">
+                                        <option selected>Select Loan Type</option>
+                                        <option value="Conventional">Conventional</option>
+                                        <option value="FHA">FHA</option>
+                                        <option value="VA">VA</option>
+                                    </select>
+                                </div>
+        
+                                <!-- Closing Date -->
+                                <div class="mb-3">
+                                    <label for="closingDate" class="form-label">Closing Date</label>
+                                    <input type="date" class="form-control" id="closingDate">
+                                </div>
+        
+                                <!-- Executed Date -->
+                                <div class="mb-3">
+                                    <label for="executedDate" class="form-label">Executed Date</label>
+                                    <input type="date" class="form-control" id="executedDate">
+                                </div>
+        
+                                <!-- Earnest Money -->
+                                <div class="mb-3">
+                                    <label for="earnestMoney" class="form-label">Earnest Money</label>
+                                    <select class="form-select" id="earnestMoney">
+                                        <option selected>Select Earnest Money</option>
+                                        <option value="Option1">Option 1</option>
+                                        <option value="Option2">Option 2</option>
+                                    </select>
+                                </div>
+        
+                                <!-- Option Money -->
+                                <div class="mb-3">
+                                    <label for="optionMoney" class="form-label">Option Money</label>
+                                    <select class="form-select" id="optionMoney">
+                                        <option selected>Select Option Money</option>
+                                        <option value="Option1">Option 1</option>
+                                        <option value="Option2">Option 2</option>
+                                    </select>
+                                </div>
+        
+                                <!-- Title Company -->
+                                <div class="mb-3">
+                                    <label for="titleCompany" class="form-label">Title Company</label>
+                                    <input type="text" class="form-control" id="titleCompany" placeholder="Type Title Company">
+                                </div>
+        
+                                <!-- Home Purchase Address -->
+                                <div class="mb-3">
+                                    <label for="homeAddress" class="form-label">Home Purchase Address</label>
+                                    <input type="text" class="form-control" id="homeAddress" placeholder="Type Home Purchase Address">
+                                </div>
+        
+                                <!-- Other Agent Contact Info -->
+                                <div class="mb-3">
+                                    <label for="agentContact" class="form-label">Other Agent Contact Info</label>
+                                    <input type="text" class="form-control" id="agentContact" placeholder="Type Agent Contact Info">
+                                </div>
+        
+                                <!-- Commission % or $ -->
+                                <div class="mb-3">
+                                    <label for="commission" class="form-label">Commission % or $</label>
+                                    <input type="text" class="form-control" id="commission" placeholder="Type Commission % or $">
+                                </div>
+        
+                                <!-- Commission Bonus % or $ -->
+                                <div class="mb-3">
+                                    <label for="commissionBonus" class="form-label">Commission Bonus % or $</label>
+                                    <input type="text" class="form-control" id="commissionBonus" placeholder="Type Commission Bonus % or $">
+                                </div>
+        
+                                <!-- Sellers Concessions $ -->
+                                <div class="mb-3">
+                                    <label for="sellersConcessions" class="form-label">Sellers Concessions $</label>
+                                    <input type="text" class="form-control" id="sellersConcessions" placeholder="Type Sellers Concessions $">
+                                </div>
+        
+                                <!-- Remaining Fields -->
+                                <!-- Add similar blocks for each field in the list -->
+        
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{-- ============ end real estate modal ========= --}}
+            
+            <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#realtorFieldsModal">
+                Realtor Fields
+            </button>
+            {{-- ========== start realtor modal ========= --}}
+            <div class="modal fade" id="realtorFieldsModal" tabindex="-1" aria-labelledby="realtorFieldsModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="realtorFieldsModalLabel">Realtor Fields Form</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <!-- County -->
+                                <div class="mb-3">
+                                    <label for="county" class="form-label">County</label>
+                                    <select class="form-select" id="county">
+                                        <option selected>Select County</option>
+                                        <option value="County1">County 1</option>
+                                        <option value="County2">County 2</option>
+                                    </select>
+                                </div>
+        
+                                <!-- Sales Price Range -->
+                                <div class="mb-3">
+                                    <label for="salesPriceRange" class="form-label">Sales Price Range</label>
+                                    <input type="text" class="form-control" id="salesPriceRange" placeholder="Type Sales Price Range">
+                                </div>
+        
+                                <!-- Max PITI -->
+                                <div class="mb-3">
+                                    <label for="maxPITI" class="form-label">Max PITI</label>
+                                    <input type="text" class="form-control" id="maxPITI" placeholder="Type Max PITI">
+                                </div>
+        
+                                <!-- Min Sq Ft -->
+                                <div class="mb-3">
+                                    <label for="minSqft" class="form-label">Min Sq Ft</label>
+                                    <input type="text" class="form-control" id="minSqft" placeholder="Type Min Sq Ft">
+                                </div>
+        
+                                <!-- Max Sq Ft -->
+                                <div class="mb-3">
+                                    <label for="maxSqft" class="form-label">Max Sq Ft</label>
+                                    <input type="text" class="form-control" id="maxSqft" placeholder="Type Max Sq Ft">
+                                </div>
+        
+                                <!-- Min Year -->
+                                <div class="mb-3">
+                                    <label for="minYear" class="form-label">Min Year</label>
+                                    <input type="text" class="form-control" id="minYear" placeholder="Type Min Year">
+                                </div>
+        
+                                <!-- Max Year -->
+                                <div class="mb-3">
+                                    <label for="maxYear" class="form-label">Max Year</label>
+                                    <input type="text" class="form-control" id="maxYear" placeholder="Type Max Year">
+                                </div>
+        
+                                <!-- Min Acres -->
+                                <div class="mb-3">
+                                    <label for="minAcres" class="form-label">Min Acres</label>
+                                    <input type="text" class="form-control" id="minAcres" placeholder="Type Min Acres">
+                                </div>
+        
+                                <!-- Max Acres -->
+                                <div class="mb-3">
+                                    <label for="maxAcres" class="form-label">Max Acres</label>
+                                    <input type="text" class="form-control" id="maxAcres" placeholder="Type Max Acres">
+                                </div>
+        
+                                <!-- Min Beds -->
+                                <div class="mb-3">
+                                    <label for="minBeds" class="form-label">Min Beds</label>
+                                    <input type="text" class="form-control" id="minBeds" placeholder="Type Min Beds">
+                                </div>
+        
+                                <!-- Min Baths -->
+                                <div class="mb-3">
+                                    <label for="minBaths" class="form-label">Min Baths</label>
+                                    <input type="text" class="form-control" id="minBaths" placeholder="Type Min Baths">
+                                </div>
+        
+                                <!-- Type -->
+                                <div class="mb-3">
+                                    <label for="type" class="form-label">Type</label>
+                                    <select class="form-select" id="type">
+                                        <option selected>Select Type</option>
+                                        <option value="Type1">Type 1</option>
+                                        <option value="Type2">Type 2</option>
+                                    </select>
+                                </div>
+        
+                                <!-- Builders -->
+                                <div class="mb-3">
+                                    <label for="builders" class="form-label">Builders</label>
+                                    <select class="form-select" id="builders">
+                                        <option selected>Select Builder</option>
+                                        <option value="Builder1">Builder 1</option>
+                                        <option value="Builder2">Builder 2</option>
+                                    </select>
+                                </div>
+        
+                                <!-- Agent Notes -->
+                                <div class="mb-3">
+                                    <label for="agentNotes" class="form-label">Agent Notes</label>
+                                    <input type="text" class="form-control" id="agentNotes" placeholder="Type Agent Notes">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            {{-- ========== end realstor modal =========== --}}
+
+            <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#postClosingModal">
+                Post Closing Fields
+            </button>
+            {{-- ======= start Post Closing Fields modal ===== --}}
+            <div class="modal fade" id="postClosingModal" tabindex="-1" aria-labelledby="postClosingModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="postClosingModalLabel">Post Closing Fields</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form id="postClosingForm">
+                                <!-- Last Closing Date -->
+                                <div class="mb-3">
+                                    <label for="lastClosingDate" class="form-label">Last Closing Date</label>
+                                    <input type="date" class="form-control" id="lastClosingDate" name="lastClosingDate">
+                                </div>
+                                <!-- Sales Price -->
+                                <div class="mb-3">
+                                    <label for="salesPrice" class="form-label">Sales Price</label>
+                                    <input type="date" class="form-control" id="salesPrice" name="salesPrice">
+                                </div>
+                                <!-- Closing Survey -->
+                                <div class="mb-3">
+                                    <label for="closingSurvey" class="form-label">Closing Survey</label>
+                                    <input type="date" class="form-control" id="closingSurvey" name="closingSurvey">
+                                </div>
+                                <!-- Closing Gift -->
+                                <div class="mb-3">
+                                    <label for="closingGift" class="form-label">Closing Gift</label>
+                                    <input type="date" class="form-control" id="closingGift" name="closingGift">
+                                </div>
+                                <!-- Post Closing Call -->
+                                <div class="mb-3">
+                                    <label for="postClosingCall" class="form-label">Post Closing Call</label>
+                                    <input type="date" class="form-control" id="postClosingCall" name="postClosingCall">
+                                </div>
+                                <!-- Homestead Call -->
+                                <div class="mb-3">
+                                    <label for="homesteadCall" class="form-label">Homestead Call</label>
+                                    <input type="date" class="form-control" id="homesteadCall" name="homesteadCall">
+                                </div>
+                                <!-- Notes -->
+                                <div class="mb-3">
+                                    <label for="notes" class="form-label">Notes</label>
+                                    <textarea class="form-control" id="notes" name="notes" rows="3"></textarea>
+                                </div>
+                                <!-- Marketing Project -->
+                                <div class="mb-3">
+                                    <label for="marketingProject" class="form-label">Marketing Project</label>
+                                    <select class="form-select" id="marketingProject" name="marketingProject">
+                                        <option value="">Select</option>
+                                        <option value="Project A">Project A</option>
+                                        <option value="Project B">Project B</option>
+                                        <option value="Project C">Project C</option>
+                                    </select>
+                                </div>
+                                <!-- Customer Service Request -->
+                                <div class="mb-3">
+                                    <label for="customerServiceRequest" class="form-label">Customer Service Request</label>
+                                    <textarea class="form-control" id="customerServiceRequest" name="customerServiceRequest" rows="3"></textarea>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="submit" form="postClosingForm" class="btn btn-primary">Save Changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{-- ========== end Post Closing Fields modal ========= --}}
+
+            <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#referredByReportModal">
+                Referred By Report
+            </button>
+            {{-- ======== start Referred By Report modal ========= --}}
+            <div class="modal fade" id="referredByReportModal" tabindex="-1" aria-labelledby="referredByReportModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="referredByReportModalLabel">Referred By Report</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form id="referredByReportForm">
+                                <!-- Filter Clients Name -->
+                                <div class="mb-3">
+                                    <label for="filterClientsName" class="form-label">Filter Clients Name</label>
+                                    <select class="form-select" id="filterClientsName" name="filterClientsName">
+                                        <option value="">Select Client</option>
+                                        <!-- Add dynamic client options here -->
+                                        <option value="Client A">Client A</option>
+                                        <option value="Client B">Client B</option>
+                                        <option value="Client C">Client C</option>
+                                    </select>
+                                </div>
+        
+                                <!-- Description -->
+                                <p class="text-muted">
+                                    A filtered report showing how many referrals a client that has closed has given us.
+                                </p>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="submit" form="referredByReportForm" class="btn btn-primary">Generate Report</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{-- ====== end Referred By Report modal ====== --}}
+        </div>
         <form class="row g-3">
             <h3>Client Information</h3>
             <div class="col-md-6">
