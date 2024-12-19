@@ -116,11 +116,25 @@
                             @csrf
                             <div class="row">
                                 <div class="col-12">
-                                    <h3>Make your choice(s)</h3>
-                                    <div class="all_select">
+                                    <div class="col-12">
+                                        <div class="mb-1 row">
+                                            <div class="col-sm-2">
+                                                <label class="col-form-label" for="title">Title <span class="text-danger asteric-sign">&#42;</span></label>
+                                            </div>
+                                            <div class="col-sm-6">
+                                            <input id="title" type="text" class="form-control {{ $errors->has('title') ? ' is-invalid' : '' }}" name="title" value="{{ old('title') }}">
+                                            @if ($errors->has('title'))
+                                                <span class="invalid-feedback" role="alert">
+                                                    <strong>{{ $errors->first('title') }}</strong>
+                                                </span>
+                                            @endif
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {{-- <div class="all_select">
                                         <input type="checkbox" id="is_spouse" name="is_spouse" />
                                         <label for="is_spouse">Is spouse</label>
-                                    </div>
+                                    </div> --}}
                                     <div class="all_select">
                                         <input type="checkbox" id="selectAll" onclick="toggleSelectAll(this)" />
                                         <label for="selectAll">Select All</label>
@@ -131,6 +145,12 @@
                                                 <input type="checkbox" name="columns[]" value="{{ $column }}" class="child-checkbox"
                                                     id="cb{{ $column }}" onclick="updateSelectAll()" /><label
                                                     for="cb{{ $column }}">{{ ucfirst(str_replace('_', ' ', $column)) }}</label>
+
+                                                    @if ($loop->last)
+                                                    <input type="checkbox" id="is_spouse" name="is_spouse" class="child-checkbox"/>
+                                                    <label
+                                                    for="is_spouse">Is Spouse</label>
+                                                    @endif
                                             @empty
                                                 <p>No data!</p>
                                             @endforelse
@@ -138,21 +158,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12">
-                                    <div class="mb-1 row">
-                                        <div class="col-sm-2">
-                                            <label class="col-form-label" for="title">Title <span class="text-danger asteric-sign">&#42;</span></label>
-                                        </div>
-                                        <div class="col-sm-6">
-                                        <input id="title" type="text" class="form-control {{ $errors->has('title') ? ' is-invalid' : '' }}" name="title" value="{{ old('title') }}">
-                                        @if ($errors->has('title'))
-                                            <span class="invalid-feedback" role="alert">
-                                                <strong>{{ $errors->first('title') }}</strong>
-                                            </span>
-                                        @endif
-                                        </div>
-                                    </div>
-                                </div>
+                                
                                 {{-- <div class="col-12">
                                     <div class="mb-1 row">
                                         <div class="col-sm-2">

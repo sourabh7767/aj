@@ -109,29 +109,6 @@
                                     @method('put')
                                         <div class="row">
                                             <div class="col-12">
-                                                <h3>Make your choice(s)</h3>
-                                                <div class="all_select">
-                                                    <input type="checkbox" {{$model->is_spouse == 1 ? "checked":""}} id="is_spouse" name="is_spouse" />
-                                                    <label for="is_spouse">Is spouse</label>
-                                                </div>
-                                                <div class="all_select">
-                                                    <input type="checkbox"  id="selectAll" onclick="toggleSelectAll(this)" />
-                                                    <label for="selectAll">Select All</label>
-                                                </div>
-                                                <div class="hiddenCB">
-                                                    <div class="items_pill">
-                                                        @forelse ($filteredColumns as $column)
-                                                            <input type="checkbox" name="columns[]" value="{{ $column }}" {{in_array($column,$feilds) ? "checked" : ""}} class="child-checkbox"
-                                                                id="cb{{ $column }}" onclick="updateSelectAll()" /><label
-                                                                for="cb{{ $column }}">{{ ucfirst(str_replace('_', ' ', $column)) }}</label>
-                                                        @empty
-                                                            <p>No data!</p>
-                                                        @endforelse
-                                                        
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-12">
                                                 <div class="mb-1 row">
                                                     <div class="col-sm-2">
                                                         <label class="col-form-label" for="title">Title <span class="text-danger asteric-sign">&#42;</span></label>
@@ -146,6 +123,35 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div class="col-12">
+                                                {{-- <div class="all_select">
+                                                    <input type="checkbox" {{$model->is_spouse == 1 ? "checked":""}} id="is_spouse" name="is_spouse" />
+                                                    <label for="is_spouse">Is spouse</label>
+                                                </div> --}}
+                                                <div class="all_select">
+                                                    <input type="checkbox"  id="selectAll" onclick="toggleSelectAll(this)" />
+                                                    <label for="selectAll">Select All</label>
+                                                </div>
+                                                <div class="hiddenCB">
+                                                    <div class="items_pill">
+                                                        @forelse ($filteredColumns as $column)
+                                                            <input type="checkbox" name="columns[]" value="{{ $column }}" {{in_array($column,$feilds) ? "checked" : ""}} class="child-checkbox"
+                                                                id="cb{{ $column }}" onclick="updateSelectAll()" /><label
+                                                                for="cb{{ $column }}">{{ ucfirst(str_replace('_', ' ', $column)) }}</label>
+
+                                                                @if ($loop->last)
+                                                                <input type="checkbox" id="is_spouse" {{$model->is_spouse == 1 ? "checked":""}} name="is_spouse" class="child-checkbox"/>
+                                                                <label
+                                                                for="is_spouse">Is Spouse</label>
+                                                                @endif
+                                                        @empty
+                                                            <p>No data!</p>
+                                                        @endforelse
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
                                             {{-- <div class="col-12">
                                                 <div class="mb-1 row">
                                                     <div class="col-sm-2">
