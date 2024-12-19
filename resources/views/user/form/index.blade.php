@@ -671,7 +671,7 @@
                     <input type="text" name="auto_payment" class="form-control" id="inputPassword4">
                 </div>
                 <div class="col-12 mb-2">
-                    <div class="form-check spouse_d_none d-none">
+                    <div class="form-check spouse_d_none">
                         <input class="form-check-input spouse" type="checkbox" id="spouse">
                         <label class="form-check-label" for="spouse">
                             Do you have a spouse?
@@ -993,6 +993,9 @@
                         inputCheckboxes.setAttribute('id', `${checkboxes}_cosigner${number}`);
                     }
                     inputCheckboxes.value = ''; // Clear any existing values
+                    if (inputCheckboxes.type === 'checkbox') {
+                        inputCheckboxes.checked = false;
+                    }
                     // console.log(`${checkboxes}_cosigner${number}`,"======");
                 });
 
@@ -1003,17 +1006,20 @@
                 cosignerContainer.appendChild(br);
                 cosignerContainer.appendChild(heading);
                 cosignerContainer.appendChild(clonedSection);
-                $("#spouse_cosigner1").closest(".spouse_d_none").removeClass("d-none");
-                $("#spouse_cosigner2").closest(".spouse_d_none").removeClass("d-none");
+                // $("#spouse_cosigner1").closest(".spouse_d_none").removeClass("d-none");
+                // $("#spouse_cosigner2").closest(".spouse_d_none").removeClass("d-none");
+
+                $("#spouse_cosigner1").closest('.col-12').next('.spouse_form').addClass('d-none');
+                $("#spouse_cosigner2").closest('.col-12').next('.spouse_form').addClass('d-none');
 
             }
         </script>
         <script>
-            $(document).on("click", "#isSpouse", function() {
-                if ($(".spouse").hasClass("d-none")) {
-                    $(".spouse").removeClass("d-none");
+            $(document).on("click", "#spouse", function() {
+                if ($(".spouse_form").hasClass("d-none")) {
+                    $(".spouse_form").removeClass("d-none");
                 } else {
-                    $(".spouse").addClass("d-none");
+                    $(".spouse_form").addClass("d-none");
                 }
                 // isSpouse
             })
