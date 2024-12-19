@@ -1050,8 +1050,10 @@
                     $(".cosignerType").removeClass("d-none");
                 } else {
                     $('#cosignerContainer').empty();
+                    
                     // $('.spouse_form').addClass('d-none');
                     // $(".spouse").addClass("d-none");
+                    $("#selectCosignerType").val("Choose...");
                     $(".cosignerType").addClass("d-none");
                 }
                 // isSpouse
