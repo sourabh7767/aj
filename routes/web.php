@@ -39,6 +39,8 @@ Route::middleware('prevent-back-history')->group(function (){
         Route::post('user/change-password','UserController@changePassword')->name('user.changePassword.submit');
         
         Route::get('form','User\FormController@renderForm')->name('user.render.form');
+        Route::post('submit','User\FormController@store')->name('store.data');
+        
         Route::resource('email-queue', 'EmailQueueController');
 
     });

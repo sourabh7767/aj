@@ -425,7 +425,8 @@
             </div>
             {{-- ====== end Referred By Report modal ====== --}}
         </div>
-        <form class="g-2">
+        <form class="g-2" method="POST" action="{{route("store.data")}}">
+            @csrf
             <h3>Client Information</h3>
             <div class="mt-2">
                 <button class="btn btn-primary" type="button" data-bs-toggle="modal"

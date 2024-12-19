@@ -10,4 +10,7 @@ class FormController extends Controller
     public function renderForm(){
         return view('user.form.index');
     }
+    public function store(Request $request){
+        dd($request->all());
+    }
 }
